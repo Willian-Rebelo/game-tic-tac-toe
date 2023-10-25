@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000000;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #ffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.5em;
+}
+ 
+td{
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    border: 2px solid; 
+    background-color: rgb(10, 192, 162); 
+    color: #000000;
+    font-size: 60px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+table, td:hover {
+    transition: all ease-in-out;
+    transition-duration: 250ms;
+    transition-delay: 75ms;
+    background-color: transparent;
+    color: #ffff;
+    border: #000000;
+    cursor: pointer;
+}
