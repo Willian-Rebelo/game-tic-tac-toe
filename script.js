@@ -1,17 +1,23 @@
 
 let jogador = "X"
+let tabela = ["", "", "", "", "", "", "", "", ""]
 
-function start(element) {
-    if (element.innerHTML) return  
-    element.innerHTML = jogador
-    trocarJogador()
-}
-
-function trocarJogador() {
-
+function marcar(indice) {
+    tabela[indice] = jogador
     if (jogador == "X") {
         jogador = "O"
     } else {
         jogador = "X"
+    }
+    render()
+}
+
+function render() {
+    let tds = document.querySelectorAll("td")
+
+    let indice = 0
+    while(indice < 9) {
+        tds[indice].innerHTML = tabela[indice]
+        indice++
     }
 }
